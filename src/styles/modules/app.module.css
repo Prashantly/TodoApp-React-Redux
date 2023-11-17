@@ -1,0 +1,89 @@
+.appWrapper {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.content__wrapper {
+  background-color: var(--bg-2);
+  padding: 2rem;
+  border-radius: 12px;
+}
+.emptyText {
+  /* display: inline-block; */
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--black-2);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--gray-2);
+  width: max-content;
+  height: auto;
+}
+
+.taskCountContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.taskCountContainer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black-2);
+}
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+  .appWrapper {
+    padding: 0 20px;
+  }
+
+  .appHeader {
+    height: 50px;
+
+    .content__wrapper {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .emptyText {
+      font-size: 1.4rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+    }
+
+    .taskCountContainer {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .taskCountContainer p {
+      font-size: 12px;
+    }
+  }
+
+  /* For tablets and larger screens */
+  @media (min-width: 768px) {
+    .appWrapper {
+      max-width: 950px;
+    }
+
+    .content__wrapper {
+      padding: 1.5rem;
+    }
+
+    .emptyText {
+      width: auto;
+    }
+  }
+}

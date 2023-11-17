@@ -1,0 +1,65 @@
+/* Button.module.css */
+
+/* Base button styles */
+.button {
+  display: inline-block;
+  height: auto;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Styles for the select button */
+.button__select {
+  color: var(--black-2);
+  font-family: Poppins;
+  padding: 1rem;
+  border: none;
+  background-color: var(--bg-3);
+  width: 150px;
+  cursor: pointer;
+}
+
+/* Modifier classes */
+.button--primary {
+  background-color: var(--primaryPurple);
+  color: var(--white);
+}
+
+.button--secondary {
+  background-color: var(--bg-3);
+  color: var(--black-1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjust button styles for tablets */
+  .button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  /* Adjust select button styles for tablets */
+  .button__select {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust button styles for mobile phones */
+  .button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  /* Adjust select button styles for mobile phones */
+  .button__select {
+    width: 100px;
+  }
+}

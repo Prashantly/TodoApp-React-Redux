@@ -1,0 +1,28 @@
+.title {
+  /* Mobile-first styles */
+  display: inline-block;
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-1);
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 769px) {
+  .title {
+    font-size: 4rem; /* Retain the font size for larger screens */
+  }
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem; /* Override font size for smaller screens */
+  }
+}
