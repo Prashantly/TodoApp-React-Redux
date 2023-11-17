@@ -2,6 +2,8 @@
 
 A simple Todo List application built using React and Redux.
 
+![TODO](https://github.com/Prashantly/TodoApp-React-Redux/assets/99544800/80fb90fe-70ee-4aac-9a7e-242dbf50724c)
+
 ## Features
 
 ### Task List Display
